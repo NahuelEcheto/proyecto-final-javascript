@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #FACC15;
+  font-family: "Catamaran", sans-serif;
+}
+
+header {
+  background-color: #FACC15;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header nav .logo {
+  width: 90px;
+  height: 90px;
+}
+header nav .abrir-carrito {
+  border: none;
+}
+header nav .abrir-carrito .changuito {
+  right: 9px;
+  top: 19px;
+  height: 40px;
+  padding-top: 2px;
+  text-decoration: none;
+  font-size: 0;
+}
+
+main {
+  background-color: #FACC15;
+  height: auto;
+}
+main .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.473)), url(../img/fondoInicio.jpg);
+  width: 100%;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main .hero .container-hero {
+  padding: 100px;
+  background-color: rgba(128, 128, 128, 0.541);
+}
+main .hero .container-hero h1 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-weight: 100;
+  margin: 20px;
+}
+main #cartas h2 {
+  text-align: center;
+  color: white;
+  font-size: 70px;
+  font-weight: 100;
+  margin: 50px;
+  padding: 10px;
+}
+main #cartas .div-cards {
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+main #cartas .div-cards .carta {
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  background-color: #B20600;
+  text-align: center;
+  transition: all 0.25s;
+}
+main #cartas .div-cards .carta:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+main #cartas .div-cards .carta .img-card {
+  width: 330px;
+  height: 220px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+main #cartas .div-cards .carta .titulo-card {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  margin-top: 10px;
+}
+main #cartas .div-cards .carta .precio-card {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+main #cartas .div-cards .carta .btn-card {
+  border: none;
+  padding: 8px;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+main #cartas .div-cards .carta .btn-card:hover {
+  background-color: black;
+  color: #FACC15;
+}
+main .section-carrito .modal .modal-dialog .modal-content .modal-header .d-flex h4 {
+  margin-left: 70px;
+}
+main .contenedor-comentarios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .contenedor-comentarios h2 {
+  text-align: center;
+  color: white;
+  font-size: 70px;
+  font-weight: 100;
+  margin: 50px;
+  padding: 10px;
+}
+main .contenedor-comentarios .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75%;
+  height: 25%;
+  text-align: center;
+}
+main .contenedor-comentarios .contenedor .cada-comentario {
+  background-color: #990000;
+  width: 280px;
+  color: white;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+}
+main .contenedor-comentarios .contenedor .cada-comentario .titulo-comentario {
+  font-size: 22px;
+  font-weight: 500;
+}
+main .contenedor-comentarios .contenedor .cada-comentario .parrafo-comentario {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#main-contacto .titulo-contacto {
+  text-align: center;
+}
+#main-contacto .titulo-contacto h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: 100;
+}
+#main-contacto .registro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main-contacto .registro #formulario-registro {
+  width: 44rem;
+  height: 29rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 50px;
+  padding: 20px;
+  border: 2px solid #FF5B00;
+  border-radius: 8px;
+  background-color: #FF5B00;
+  color: white;
+  align-items: center;
+}
+#main-contacto .registro #formulario-registro h2 {
+  font-size: 25px;
+  text-align: center;
+}
+#main-contacto .registro #formulario-registro p {
+  font-size: 15px;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+#main-contacto .registro #formulario-registro label {
+  font-size: 16px;
+  font-weight: 100;
+}
+#main-contacto .registro #formulario-registro .campos {
+  width: 19rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2px;
+}
+#main-contacto .registro #formulario-registro .boton-registro {
+  width: 6rem;
+}
+#main-contacto .registro #formulario-registro #submit {
+  background-color: #990000;
+  border: #990000;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 8px;
+  transition: 1s;
+}
+#main-contacto .registro #formulario-registro #submit:hover {
+  background-color: #FACC15;
+  color: #990000;
+}
+
+.footer .logo {
+  width: 100px;
+  height: 100px;
+}
+.footer .redes {
+  width: 40px;
+  height: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

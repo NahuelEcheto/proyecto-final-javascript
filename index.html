@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Big Burger - Inicio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="index.html"><img src="./img/logoHamburguesa.png" class="logo" alt="logo hamburguesa"></a>
+            </div>
+            <div class="button-changuito">
+                <button type="button" class="abrir-carrito mt-5 mx-5 btn" data-bs-toggle="modal" data-bs-target="#miModal"><img src="./img/carrito-de-compras.png" class="changuito" alt="changuito de compras"><span class="badge text-bg-secondary"></span></button>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <div class="container-hero">
+                <h1>Bienvenidos a BIG BURGUER</h1>
+            </div>
+        </section>
+        <section class="comentarios">
+
+        </section>
+        <section id="cartas">
+            <h2>Nuestro menú</h2>
+            <div class="div-cards h-100">
+
+            </div>
+        </section>
+        <section class="section-carrito">
+            <div class="modal fade" id="miModal" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header d-flex flex-column">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                            <h3 class="modal-title" id="modalTitle">CARRITO DE COMPRAS</h3>
+                            <div class="d-flex justify-content-between mb-3">
+                                <h4>Producto</h4>
+                                <h4>Precio</h4>
+                                <h4>Cantidad</h4>
+                            </div>
+                        </div>
+                        <div class="modal-body h-25">
+                            <section class="container-carrito">
+                                <div class="carrito-compra">
+
+                                </div>
+                            </section>
+                            <section class="div-carrito">
+                                <div id="carrito">
+
+                                </div>
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+                            <p>TOTAL</p>
+                            <p class="precio-total">$ 0</p>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" >CERRAR CARRITO</button>
+                            <a class="btn btn-success button-comprar" href="./secciones/formulario.html" role="button">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor-comentarios">
+            <h2>Comentarios de nuestros clientes</h2>
+            <div class="contenedor">
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <section>
+            <div class="container-fluid">
+                <div class="row p-2 bg-dark text-white">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div>
+                            <a href="index.html"><img class="logo" class="rounded mx-4 d-block d-flex align-items-center"
+                                    src="./img/logoHamburguesa.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div>
+                            <p class="h5">Síguenos en:</p>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/?hl=es" class="text-decoration-none text-secondary"><img
+                                    class="redes  p-2" src="./img/instagram.png">Instagram</a>
+                        </div>
+                        <div>
+                            <a href="https://es-la.facebook.com/" class="text-decoration-none text-secondary"><img
+                                    class="redes p-2" src="./img/facebook.png">Facebook</a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/?lang=es" class="text-decoration-none text-secondary"><img
+                                    class="redes p-2" src="./img/twitter.png">Twitter</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div>
+                            <p class="h5"> Contacto</p>
+                        </div>
+                        <div>
+                            <p class="text-secondary">Teléfono: 000 0800 4433</p>
+                        </div>
+                        <div>
+                            <p class="text-secondary">Email: ventas@bigburger.com</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 pt-4">
+                        <p class="text-white text-center">Todos los derechos reservados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/comentarios.js"></script>
+    <script src="./js/productos.js"></script>
+    <script src="./js/javaScript.js"></script>
+</body>
+</html>

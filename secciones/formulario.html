@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Big Burger - Formulario</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="../index.html"><img src="../img/logoHamburguesa.png" class="logo" alt="logo hamburguesa"></a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <main id="main-contacto">
+            <section class="titulo-contacto">
+                <h1>Formulario de envío</h1>
+            </section>
+            <section class="registro">
+                <form id="formulario-registro">
+                    <h2>Formulario</h2>
+                    <p>Se deberan llenar todos los campos para poder enviar el pedido.</p>
+                    <label for="campo-nombre"> Nombre </label>
+                    <input class="campos" type="text" id="campo-nombre">
+                    <label for="campo-apellido"> Apellido </label>
+                    <input class="campos" type="text" id="campo-apellido">
+                    <label for="campo-email"> Email </label>
+                    <input class="campos" type="email" id="campo-email">
+                    <label for="campo-direccion"> Dirección </label>
+                    <input class="campos" type="text" id="campo-direccion">
+                    <label class="boton-registro">
+                        <input type="submit" value="Registrarse" id="submit">
+                    </label>      
+                </form>
+            </section>
+    </main>
+
+
+    <footer class="footer">
+        <section>
+            <div class="container-fluid">
+                <div class="row p-2 bg-dark text-white">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div>
+                            <a href="../index.html"><img class="logo"
+                                    class="rounded mx-4 d-block d-flex align-items-center"
+                                    src="../img/logoHamburguesa.png"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div>
+                            <p class="h5">Síguenos en:</p>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/?hl=es" class="text-decoration-none text-secondary"><img
+                                    class="redes  p-2" src="../img/instagram.png">Instagram</a>
+                        </div>
+                        <div>
+                            <a href="https://es-la.facebook.com/" class="text-decoration-none text-secondary"><img
+                                    class="redes p-2" src="../img/facebook.png">Facebook</a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/?lang=es" class="text-decoration-none text-secondary"><img
+                                    class="redes p-2" src="../img/twitter.png">Twitter</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div>
+                            <p class="h5"> Contacto</p>
+                        </div>
+                        <div>
+                            <p class="text-secondary">Teléfono: 000 0800 4433</p>
+                        </div>
+                        <div>
+                            <p class="text-secondary">Email: ventas@bigburger.com</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 pt-4">
+                        <p class="text-white text-center">Todos los derechos reservados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script src="../js/productos.js"></script>
+    <script src="../js/formulario.js"></script>
+</body>
+
+</html>
