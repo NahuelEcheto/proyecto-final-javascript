@@ -3,61 +3,44 @@ const inputNombre = document.querySelector("#campo-nombre");
 const inputApellido = document.querySelector("#campo-apellido");
 const inputEmail = document.querySelector("#campo-email");
 const inputDireccion = document.querySelector("#campo-direccion");
-const submit = document.querySelector("#submit");
-const registrado = document.querySelector("#registrado");
 
-
-
-let clientes = []
-
-class ClienteNuevo {
-    constructor(nombre, apellido, email, direccion){
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.email = email;
-        this.direccion = direccion;
-    }
-}
-
-const agregarClienteNuevo = (array, inputNombre, inputApellido, inputEmail, inputDireccion) => {
-    array.push(inputNombre, inputApellido, inputEmail, inputDireccion)
-}
-
-const clienteJSON = (clave, valor) => {
-    const arrayJSON = JSON.stringify(valor)
-    localStorage.setItem(clave, arrayJSON)
-}
-
-const parseCliente = (clave) => {
-    const arrayParse = localStorage.getItem("clientes") || "[]"
-    const parsearArray = JSON.parse(arrayParse)
-    return parsearArray
-}
-
-function confirmacionRegistro() {
-    if(inputNombre.value !== "" && inputApellido !== "" && inputEmail !== "" && inputDireccion !== "") {
-        
+const confirmacionRegistro = () => {
+    if (
+        inputNombre.value.trim() !== "" &&
+        inputApellido.value.trim() !== "" &&
+        inputEmail.value.trim() !== "" &&
+        inputDireccion.value.trim() !== ""
+    ) {
         Toastify({
-            text: `Gracias ${inputNombre.value} por tu compra. En breve estaremos enviando tu pedido.`,
+            text: `Gracias ${inputNombre.value} ${inputApellido.value} por tu compra. En breve estaremos enviando tu pedido a ${inputDireccion.value}. Te contactaremos al email: ${inputEmail.value}.`,
+            close: true,
+            duration: 4000,
+            position: "left",
+        }).showToast();
+        return true;
+    } else {
+        Toastify({
+            text: "¡¡ Por favor completar todos los campos !!",
             close: true,
             duration: 3000,
-            position: "left"
-        }).showToast()
+            position: "left",
+        }).showToast();
+        return false;
     }
-    else {
-        Toastify({
-            text: `¡¡ Por favor completar todos los campos !!`,
-            close: true,
-            duration: 3000,
-            position: "left"
-        }).showToast()
-    }
-}
+};
 
 formulario.onsubmit = (event) => {
     event.preventDefault();
-    agregarClienteNuevo(clientes, inputNombre.value, inputApellido.value, inputEmail.value, inputDireccion.value);
-    confirmacionRegistro();
-    formulario.reset();
-    clienteJSON("clientes", clientes);
-}
+
+    if (confirmacionRegistro()) {
+        formulario.reset();
+
+        setTimeout(() => {
+            document.body.classList.add("fade-out");
+
+            setTimeout(() => {
+                window.location.href = "index.html";
+            }, 800); 
+        }, 4000);
+    }
+};
